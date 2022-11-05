@@ -1,0 +1,84 @@
+/* For desktop: */
+.col-pc-1 {width: 8.33%;}
+.col-pc-2 {width: 16.66%;}
+.col-pc-3 {width: 25%;}
+.col-pc-4 {width: 33.33%;}
+.col-pc-5 {width: 41.66%;}
+.col-pc-6 {width: 50%;}
+.col-pc-7 {width: 58.33%;}
+.col-pc-8 {width: 66.66%;}
+.col-pc-9 {width: 75%;}
+.col-pc-10 {width: 83.33%;}
+.col-pc-11 {width: 91.66%;}
+.col-pc-12 {width: 100%;}
+
+
+
+/* header section */
+.nevigation nav a{
+    font-size: 15px;
+    margin:0px 18px;
+}
+/* banner section */
+.scroll-button{
+    position: absolute;
+    bottom:80px;
+    left:600px;
+}
+/* offers section */
+.offers-description{
+    text-align: center;
+}
+.banner2{
+    height: 700px;
+}
+#offers .heading2{
+    top:300px;
+}
+.quality1,
+.quality2,
+.quality3,
+.quality4{
+    margin-top:0px;
+    margin: 0px 44px;
+}
+.gallery-img{
+    width:417px;
+    height:400px;
+    margin: 0px 2px;
+}
+.product-img{
+    margin: 0px 2px;
+    height: 400px;
+    width: 400px;
+}
+.offering-desc{
+   text-align: center;
+}
+/* serve section */
+.designer,
+.homeowners,
+.homebuilder{
+    margin: 0px 52px;
+}
+.serve-links{
+    text-align: center;
+    margin-top: 30px;
+}
+/* opinion section */
+.client1,.client2,.client3{
+    border:2px solid white;
+    margin:20px 50px;
+    padding: 0px 20px;
+}
+.client2{
+    padding-bottom: 14px;
+}
+.nevigation-dots>button{
+    visibility: hidden;
+}
+/* contact section */
+.showroom1,.showroom2,
+.showroom3,.showroom4{
+    margin: 50px 52px;
+}

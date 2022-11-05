@@ -1,0 +1,176 @@
+/* For Tablet */
+.col-tab-1 {width: 8.33%;}
+.col-tab-2 {width: 16.66%;}
+.col-tab-3 {width: 25%;}
+.col-tab-4 {width: 33.33%;}
+.col-tab-5 {width: 41.66%;}
+.col-tab-6 {width: 50%;}
+.col-tab-7 {width: 58.33%;}
+.col-tab-8 {width: 66.66%;}
+.col-tab-9 {width: 75%;}
+.col-tab-10 {width: 83.33%;}
+.col-tab-11 {width: 91.66%;}
+.col-tab-12 {width: 100%;}
+
+/* variables */
+:root{
+    --body-color:rgb(61, 114, 237);
+    --banner-color:rgb(23, 253, 11);
+    --container-color:rgb(31, 29, 29);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header section */
+#menu-btn{
+    display: none;
+}
+nav{
+    display: inline;
+}
+.nevigation{
+    margin-top:35px;
+    transition: none;
+    background-color: transparent;
+}
+.nevigation nav a{
+    display: inline;
+    text-decoration: none;
+    font-size: 15px;
+    margin:0px 10px;
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    padding: 0px;
+}
+.nevigation a:hover{
+    color:orangered;
+}
+/* banner section */
+.scroll-button{
+    position: absolute;
+    bottom:60px;
+    left:350px;
+}
+/*offered prodcuts section*/ 
+#offers{
+    margin-top: 80px;
+}
+.product-img{
+    margin:10px 10px;
+}
+.all-products-button{
+    margin-bottom: 20px;
+}
+.offers-heading{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 50px;
+}
+#offers h1{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color:var(--body-color);
+}
+.offers-description{
+    margin-top:20px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+}
+.banner2{
+    width: 100%;
+    height: 600px;
+    background-image: url("images/factory.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+#offers .heading2{
+    top:240px;
+}
+.qualities{
+    margin-top:80px;
+}
+.quality1,
+.quality2,
+.quality3,
+.quality4{
+    text-align: center;
+}
+.qulaity1>img,h2,p{
+    margin:20px 0px;
+}
+.quality-section-description{
+    line-height: 30px;
+}
+.quality1,
+.quality2,
+.quality3,
+.quality4{
+    margin-top:0px;
+    margin: 0px 30px;
+}
+.gallery-img{
+    width:260px;
+    height:190px;
+    margin: 0px 10px;
+}
+.offering-container{
+    padding-bottom: 80px;
+}
+/* serve section */
+.serve-section-heading{
+    font-size: 1.3rem;
+    padding: 10px 0px;
+}
+.serve-image{
+    width: 240px;
+}
+.designer,
+.homeowners,
+.homebuilder{
+    margin: 0px 30px;
+}
+.designer{
+    margin-top: 55px;
+}
+.serve-desc{
+    margin-top:20px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+}
+.homeowners,.homebuilder{
+    margin-top: 50px;
+}
+/* opinion section */
+.client1,.client2,.client3{
+    border:2px solid white;
+    margin:20px 0px;
+}
+.client1,.client2{
+    margin: 10px 30px;
+}
+.client2{
+    padding-bottom: 33px;
+}
+/* contact section */
+.showroom1,.showroom2,
+.showroom3,.showroom4{
+    margin: 50px 33px;
+}
+iframe{
+    height: 600px;
+}
+
+

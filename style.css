@@ -1,0 +1,541 @@
+/* initial setup code */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+/* variables */
+:root{
+    --body-color:rgb(61, 114, 237);
+    --banner-color:rgb(23, 253, 11);
+    --container-color:rgb(31, 29, 29);
+}
+/* row and column mapping */
+[class*='col-']{
+    width: 100%;
+    float:left;
+}
+.row{
+    width:100%;
+}
+.row::after{
+    clear:both;
+    content: '';
+    display: block;
+}
+
+/* header section */
+header{
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 1;
+}
+.logo{
+    padding: 10px;
+}
+.nevigation-menu-button{
+    position: absolute;
+    right: 25px;
+    top:25px;
+}
+#menu-btn{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+.nevigation{
+    display: block;
+    background-color: var(--body-color);
+    height:0;
+    z-index: 1;
+    transition: 0.3s;
+}
+nav{
+    display: none;
+}
+.nevigation nav a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* main body */
+
+/* banner section */
+#banner{
+    width: 100%;
+    height: 550px;
+    background-image:url("images/pexels-pixabay-158729.jpg");
+    background-position:center;
+    background-size: cover;
+}
+.slogan{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 3.3rem;
+    line-height: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(23, 253, 11);
+    text-shadow: 2px 1px 2px black;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top:150px;
+}
+.scroll-button{
+    position: absolute;
+    bottom:50px;
+    left:200px;
+}
+.scroll-button a{
+    color:white;
+    text-decoration: none;
+    text-shadow: 2px 1px 2px black;
+}
+.scroll-down-tooltip{
+    position: absolute;
+    bottom:-40px;
+    right:-20px;
+    text-transform: uppercase;
+}
+/* about section */
+#about{
+    width: 100%;
+    height: max-content;
+    background-color:var(--container-color);
+    color:white;
+}
+.about-container{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.about-heading{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 50px;
+}
+.about-container h1{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color:cornflowerblue;
+}
+.about-description{
+    margin-top:20px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+}
+.about-link{
+    text-align: center;
+    padding: 40px 0px;
+}
+.about-container a{
+    color:white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+.about-container a:hover{
+    opacity: 0.6;
+}
+/* offered products section */
+#offers{
+    margin-top: 50px;
+}
+.product-img{
+    width:300px;
+    height: 300px;
+    margin:10px 0px;
+    box-shadow: 1px 0px 2px black;
+}
+.all-products{
+    text-align: center;
+    margin-top:50px;
+}
+.all-products-button{
+    text-align: center;
+    padding: 10px;
+}
+#all-products-btn{
+    width: 180px;
+    height: 40px;
+    border:none;
+    background-color: var(--body-color);
+    color:white;
+    cursor: pointer;
+    font-size: 1.06rem;
+}
+#all-products-btn:hover{
+    border:1px solid indigo;
+    background-color: transparent;
+    color:black;
+    transition: 0.3s;
+}
+.offers-heading{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 50px;
+}
+#offers h1{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color:var(--body-color);
+}
+.offers-description{
+    margin-top:20px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+}
+.banner2{
+    width: 100%;
+    height: 300px;
+    background-image: url("images/factory.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+#offers .heading2{
+    color:blanchedalmond;
+    text-shadow: 1px 1px 2px black;
+    position: relative;
+    font-size: 2.8rem;
+    line-height: 70px;
+    width: 100%;
+    top:50px;
+}
+.qualities{
+    margin-top: 80px;
+}
+.quality1,
+.quality2,
+.quality3,
+.quality4{
+    text-align: center;
+}
+.qulaity1>img,h2,p{
+    margin:20px 0px;
+}
+.quality-section-description{
+    line-height: 30px;
+}
+.quality2,
+.quality3,
+.quality4{
+    margin-top:100px;
+}
+.visit-links{
+    text-align: center;
+    margin-top: 50px;
+}
+.visit-links a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.2rem;
+    text-decoration: none;
+   border-bottom:1px solid black;
+}
+.visit-links a:hover{
+    opacity: 0.6;
+}
+.gallery-img{
+    width:100%;
+    height:300px;
+}
+.image-gallery{
+    margin-top:50px;
+}
+.offerings{
+    background-color:var(--container-color);
+}
+.offering-container{
+    padding-top: 80px;
+    color:white;
+}
+.offering-heading{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+}
+.offering-desc{
+    margin-top:20px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+}
+.offerings-link{
+    text-align: center;
+    margin-top: 30px;
+}
+.offering-container a{
+    color:white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    line-height: 30px;
+    border-bottom: 1px solid white;
+}
+.offering-container a:hover{
+    opacity: 0.7;
+}
+/* stone history section */
+#stone-history{
+    margin-top: 50px;
+}
+.history-heading{
+    font-size: 3rem;
+    text-align: center;
+    font-family:sans-serif;
+    font-weight: 300;
+    color:var(--body-color);
+    text-shadow: 1px 0.5px 1px black;
+    margin-bottom: 50px;
+}
+.stone-img{
+    text-align: center;
+}
+.stone-image{
+    width: 360px;
+}
+.stone-name{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+.stone-history-desc{
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.1rem;
+    padding: 0px 5px;
+}
+.stone1,.stone2,.stone3,.stone4{
+    margin:100px 0px;
+}
+#stone-history button{
+    width: 60px;
+    height: 30px;
+    background-color: var(--body-color);
+    color:white;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    z-index:0;
+}
+#stone-history button:hover{
+    background-color: transparent;
+    color:black;
+    border:1px solid black;
+}
+/* serve section */
+.serve-container{
+    background-color:rgb(171, 199, 220);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.serve-heading{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+.serve-container h1{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color:blueviolet;
+    padding-bottom: 50px;
+}
+.serve-image{
+    width: 300px;
+}
+.serve-section-heading{
+    font-size: 1.3rem;
+    padding: 10px 0px;
+}
+.serve-desc{
+    margin-top:20px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+}
+.homeowners,.homebuilder{
+    margin-top: 50px;
+}
+.serve-links{
+    text-align: center;
+}
+.serve-links a{
+    color:black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    line-height: 30px;
+    border-bottom: 1px solid black;
+}
+.serve-links:hover{
+    opacity: 0.7;
+}
+/* opinion section */
+.client-opinion-container{
+    text-align: center;
+    background-color: var(--container-color);
+    color:white;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+.opinion-heading{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    font-size: 2.1rem;
+    line-height: 50px;
+    color:var(--body-color);
+}
+.client-message{
+    margin-top:20px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    padding: 0px 10px;
+    font-style: italic;
+}
+.client-name{
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    color:aquamarine;
+}
+.client1,.client2,.client3{
+    border:2px solid white;
+    margin:10px 0px;
+}
+.nevigation-dots>button{
+    margin: 0px 10px;
+    background-color: transparent;
+    border:none;
+    color:white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nevigation-dots>button:hover{
+    transform: scale(1.2);
+}
+.nevigation-dots{
+    padding-bottom: 20px;
+}
+/* contact us section */
+.contact-us-heading{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    font-size: 2.1rem;
+    line-height: 50px;
+    color:var(--body-color);
+}
+.showroom-heading{
+    text-transform: uppercase;
+    padding: 20px 10px;
+    font-size: 1.3rem;
+}
+.showroom-img{
+    width:100%;
+}
+.address{
+    padding: 0px 10px;
+    font-size: 1.2rem;
+}
+.contact-num{
+    text-decoration: none;
+    color:black;padding: 0px 10px;
+    font-size: 1.2rem;
+}
+.contact-num:hover{
+    text-decoration: underline;
+}
+.showroom1,.showroom2,
+.showroom3,.showroom4{
+    margin: 50px 0px;
+}
+.online-contact-heading{
+    margin-left: 10px;
+    padding: 30px 0px;
+    color:var(--body-color);
+}
+.online-contact input{
+    width: 95%;
+    padding: 10px 0px;
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;
+    margin:20px 10px;
+    font-size: 1.2rem;
+}
+.online-contact label{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+textarea{
+    width: 95%;
+    margin-left: 10px;
+    height: 240px;
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.send-btn{
+    width: 180px;
+    height: 50px;
+    margin: 40px 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: var(--body-color);
+    border:none;
+    color:white;
+    letter-spacing: 2px;
+}
+.send-btn:hover{
+    background-color: transparent;
+    border:1px solid black;
+    color:black;
+}
+/* footer section */
+footer{
+    background-color: var(--container-color);
+    padding: 20px;
+    text-align: center;
+    color:white;
+}
